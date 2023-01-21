@@ -21,7 +21,7 @@ public class TripBooking {
         return status;
     }
 
-    public void setStatus(TripStatus status) {
+    public void setTripStatus(TripStatus status) {
         this.status = status;
     }
 
