@@ -17,5 +17,5 @@ import javax.transaction.Transactional;
 @Repository
 public interface AdminRepository extends JpaRepository<Admin, Integer>{
 
-
+        void delete(Admin admin);
 }
