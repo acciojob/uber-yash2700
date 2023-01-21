@@ -8,21 +8,25 @@ import javax.persistence.Id;
 @Entity
 public class Admin {
 
+    public int getAdminId() {
+        return adminId;
+    }
+
+    public void setAdminId(int adminId) {
+        this.adminId = adminId;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int adminId;
 
     private String username;
 
     private String password;
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
+
 
     public String getUsername() {
         return username;
@@ -40,8 +44,8 @@ public class Admin {
         this.password = password;
     }
 
-    public Admin(int id, String username, String password) {
-        this.id = id;
+    public Admin(int adminId, String username, String password) {
+        this.adminId = adminId;
         this.username = username;
         this.password = password;
     }
